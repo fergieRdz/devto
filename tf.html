@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href=https://ajaxclass-1ca34.firebaseio.com/MariaFernandaRodriguezVillarreal/posts/.json
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    /> 
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://media2.dev.to/dynamic/image/width=32,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png"
+    />
+    <title>Dev Community 👩‍💻👨‍💻</title>
+  </head>
+
+  <body>
+    <!--inicia NAV R-->
+<!-- INICIA NAV R -->
+    <nav class="navWeb">
+      <div class="containerNavWeb">
+        <div class="containerSerch">
+          <a href="/tf.html"  target="_blank">        
+          <div> 
+              <img
+              class="imgLogo"
+              src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt="Logo"
+            />
+          </div>
+          </a>
+          <form class="flex">
+            <div class="search">
+              <span class="search-icon material-symbols-outlined">
+                search
+              </span>
+              <input
+                class="search-input"
+                type="search"
+                placeholder="Search..."
+              />
+              <div class="search-Text">
+                <p>Powered by @ Algolia</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="containerBtnNav">
+          <button class="btnNavL" id="botonnavL">Log in</button>
+          <button class="btnNavC" id="botonnavC">Create acount</button>
+        </div>
+      </div>
+    </nav>
+    <nav class="navMobile">
+      <div class="containerNavMobile">
+        <div class="containerNavMOne">
+          <img
+            class="imgMH"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEX///8AAABAQECEhITR0dFRUVG7u7uampqMjIwUFBTs7Oz8/PwoKCiwsLCdnZ3X19fz8/NxcXGlpaXd3d1YWFhoaGg0NDReXl7m5uZ9fX0eHh5CQkLHx8fw8PAlJSUZGRmRkZEtLS0NDQ3CwsJubm54eHg2NjZJSUlegFOiAAADDklEQVR4nO3di3LaQAyFYQMGAo7B3IJDCJcQwvu/YZu6SUo6ldasZzRy/+8JdAaDd21pSRIAAAAAAAAAAAAAAAAAaL/ndLha9t1Y323HtfKNew8db3bnRXjAuXW1NzoE5iv61pXe7CHoUs3erOuMMAqImK2tq4zSLdSEE+saIz1qARfWFUbbKgln1gVG68sBy511gfFSMeHAurwGDMWEj9blNWApJuxal9eAvZhwY11eEzIp4d66uiaICe+tq2uCeJX6XXR/OYoJh9blNWAmJtxal9eAXExYeN46VTalmND91kLfXBTe7/mbZyVhklqXGGmgBfT7GKpypwdMkjvrKiPId4pPuXWdN5uEBfy5D/a501/XeCScTB+fRtYF1/LSPafiivtvxWI78OM0VW8SAAAAAAAAAADArSzNJ0M35lu9+/naYGn9Mqm2S17j3VP6ZF3uTR4C3uFXDtal3qwX9jGereuMIHfP/ua5UaHTWekBvXd6q80K46N1iZFetHYFv78yH85ywMLf3OF3e7k38WRdXwPmYkLfP6QV+ee0DX3e92LCFow9Kb36vlq9/kFcurV/ZsbnpuLaTrxKe9blNWAtJvS+Kn0nr0zH/geftIWp/8tU2z+V7ufzpkpC58MIQeMIr9Y1RlFm1Sv+HiR+6QY9isr8DnSvQp8L5z7vGRt5Z3ilmPvbZIyGNQcSyvzQ8+OQ15mXAQAAAAAAAAAAzpTT1I9pWfMYrKScLI/WL5Nq2fUPdd7NFD6bMM/Bf1NyctuPIR/O+slzN0bQwZB+T018F3By4tS6xkjanz8k2cW6xEhHrR3D85ewonwVM/8ttPfyPcP7KcLv5ClE/4dda2NBnnvaPryJCX22e30jJmz/vIXbFemfxIT+h/M6nZF4lfo85vqa3Cbse9ldOYgJFy34Isr/2ZWsrOuLdpEDtmDZdlISuh+aedUCJoXv3YWys/hl7HpdE/RI0fGxCiN16KmSef0uzsIPGlqsXqyrrW+t3Ai/Z8zP/a4fl9mcgQsAAAAAAAAAAAAAAAAA/4MfPoZhUXUs+4QAAAAASUVORK5CYII="
+            alt="menuH"
+          />
+          <img
+            class="imgLogo"
+            src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+            alt="Logo"
+          />
+        </div>
+        <div class="containerNavMTwo">
+          <button class="btnNavC">Create acount</button>
+        </div>
+      </div>
+    </nav>
+    <!-- TERMINA NAV R -->
+   
+    <main class="containerseccion">
+        <div class="containerseccionone">
+          <div id="partLeft">
+            <div class="texto11">
+
+              <h4 class="texto1">
+                DEV Community is <br>
+                a community of <br> 3,244,403<br>
+                amazing<br>developer<br>
+              </h4>
+              <p class="parrafo1">We're a place where<br> coders share, stay
+                up-<br>to-date and grow their<br> careers.</p>
+              <button class="boton2">Create account</button>
+              <button class="boton3">Log In </button>
+            </div> <!--1-->
+            <!--.....................................-->
+            <div id="rightIcons">
+            <div class="botonindex" id="casa"> <button>
+                <img src="imagenes /casa boton .png" alt="icono" width="25"
+                  height="20">
+                Home </button></div>
+            <!--.....................................-->
+            <div class="botonindex" id="DEV"> <button>
+                <img src="imagenes /c++.png" alt="icono" width="25" height="20">
+                DEV++ </button> </div>
+            <!--......................................-->
+            <div class="botonindex" id="podcast"><button>
+                <img src="imagenes /podcast.png" alt="icono" width="25"
+                  height="20">
+                Podcast </button> </div>
+            <!--......................................-->
+            <div class="botonindex" id="videos"><button>
+                <img src="imagenes /video.png" alt="icono" width="25"
+                  height="20">
+                Video </button> </div>
+            <!--.......................................-->
+            <div class="botonindex" id="tags"><button>
+                <img src="imagenes /tags .png" alt="icono" width="25"
+                  height="20">
+                Tags </button> </div>
+            <!--...........................................-->
+            <div class="botonindex" id="devhelp"><button>
+                <img src="imagenes /devhelp.png" alt="icono" width="25"
+                  height="20">
+                Dev Help </button></div>
+            <!--............................................-->
+            <div class="botonindex" id="foremshop"><button>
+                <img src="imagenes /forem shop.png" alt="icono" width="25"
+                  height="20">
+                Forem Shop </button> </div>
+            <!--............................................-->
+            <div class="botonindex" id="AdvertiseonDEV"><button>
+                <img src="imagenes /Advertise on DEV.jpg" alt="icono" width="25"
+                  height="20">
+                Advertise on DEV </button> </div>
+            <!--............................................-->
+            <div class="botonindex" id="DEVChallenges"><button>
+                <img src="imagenes /DEV Challenges.png" alt="icono" width="25"
+                  height="20">
+                DEV Challenges</button></div>
+            <!--............................................-->
+            <div class="botonindex" id="DEVShowcase"> <button>
+                <img src="imagenes /DEV Showcase.png" alt="icono" width="25"
+                  height="20">
+                DEV Showcase </button></div>
+            <!--..............................................-->
+            <div class="botonindex" id="About"><button>
+                <img src="imagenes /about.png" alt="icono" width="25"
+                  height="20">
+                About </button> </div>
+            <!--.............................................-->
+            <div class="botonindex" id="contac"> <button>
+                <img src="imagenes /contac.png" alt="icono" width="25"
+                  height="20">
+                Contac </button> </div>
+            <!--............................................-->
+            <div class="botonindex" id="FreePostgresDatabase"><button>
+                <img src="imagenes /Free Postgres Database.png" alt="icono"
+                  width="25" height="20">
+                Free Postgres Database </button> </div>
+            <!--...........................................-->
+            <div class="botonindex" id="Softwarecomparisons"><button>
+                <img src="imagenes /Software comparisons.png" alt="icono"
+                  width=45"
+                  height="20">
+                Software comparisons</button> </div>
+            <!--...............SE ACABARON LOS BOTONES DE LA SEGUNDA PARTE-->
+            <h2> Other </h2>
+
+            <!--................inicia la tercera parte de los botones-->
+            <div class="botonindex" id="CodeofConduct"><button>
+                <img src="imagenes /Code of Conduct.png" alt="icono" width="30"
+                  height="20">
+                Code of Conduct </button> </div>
+            <!--..........................................-->
+            <div class="botonindex" id="PrivacyPolicy"><button>
+                <img src="imagenes /Privacy Policy.png" alt="icono" width="30"
+                  height="20">
+                Privacy Policy </button> </div>
+            <!--.........................................-->
+            <div class="botonindex" id="Termsofuse"><button>
+                <img src="imagenes /Terms of use .png" alt="icono" width="30"
+                  height="20">
+                Terms of use </butto>
+            </div>
+            </div>
+            <!--.................................................ultima parte del los botones-->
+            <div>
+              <img src="imagenes /X.png" alt=icono width="30" height="20">
+              <img src="imagenes /Facebook-.png" alt="30" height="20">
+              <img src="imagenes /hithub.png" alt="30" height="20">
+              <img src="imagenes /intagram.jpg" alt="30" height="20">
+              <img src="imagenes /twich.png" alt="30" height="20">
+            </div>
+            <img src="imagenes /mastodon.png" alt="30" height="20">
+            <img src="imagenes /mariposa.png" alt="30" height="20">
+
+            <h3>Popular Tags</h3>
+            <div class="tag-box">
+              <span class="tag">#webdev</span><br>
+              <span class="tag">#programming</span><br>
+              <span class="tag">#javascript</span><br>
+              <span class="tag">#beginners</span><br>
+              <span class="tag">#ai</span><br>
+              <span class="tag">#java</span><br>
+              <span class="tag">#productivity</span><br>
+              <span class="tag">#tutorial</span><br>
+              <span class="tag">#python</span><br>
+              <span class="tag">#devops</span><br>
+              <span class="tag">#react</span><br>
+              <span class="tag">#rust</span><br>
+              <span class="tag">#discuss</span><br>
+              <span class="tag">#opensource</span><br>
+              <span class="tag">#career</span><br>
+              <span class="tag">#aws</span><br>
+              <span class="tag">#learning</span><br>
+              <span class="tag">#news</span><br>
+              <span class="tag">#machinelearning</span><br>
+              <span class="tag">#css</span><br>
+              <span class="tag">#typescript</span><br>
+              <span class="tag">#frontend</span><br>
+              <span class="tag">#cloud</span><br>
+              <span class="tag">#api</span><br>
+              <span class="tag">#node</span><br>
+              <span class="tag">#security</span><br>
+              <span class="tag">#database</span><br>
+              <span class="tag">#softwaredevelopment</span><br>
+              <span class="tag">#development</span><br>
+              <span class="tag">#go</span><br>
+
+            </div>
+            <!--....................................................se acaba el tag -->
+            <!--................................................inicia la publicidad-->
+            <div class=publicidad>
+              <h2>
+                <img src="imagenes /diamante.png" alt="icono" width="20px"
+                  height="20px">
+                DEV Diamond Sponsors
+              </h2>
+              <p class="parrafo">Thank you to our Diamond Sponsors for
+                supporting
+                the DEV Community </p>
+              <img src="imagenes /Google_AI.png" alt="icono" width="150px"
+                height=100px">
+              <p class="parrafo">Google AI is the official AI <br> Model and
+                Platform Partner</br> of DEV</p>
+            <img
+              src="imagenes /https___dev-to-uploads.s3.amazonaws.com_uploads_articles_bnl88cil6afxzmgwrgtt.webp"
+              alt="icono" width="130px" height="130px">
+            <p class="parrafo"> Neon is the official database partner of DEV</p>
+            <img src="imagenes /angolia.png" alt="icono" width="100px"
+              height="100px">
+            <p class="parrafo">Algolia is the official search partner of DEV</p>
+          </div>
+          <!--.......................................................se acaba la publicidad -->
+
+          <div class="card">
+            <div class="card-header">
+              <span>DEV Community</span>
+
+              <div class="menu-container">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-button">⋯</label>
+                <div class="dropdown-menu">
+                  <a href="#">What's a billboard?</a>
+                  <a href="#">Manage preferences</a>
+                  <a href="#">Report billboard</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="card-body">
+              <h3>Easiest way to help the DEV community feel more like a
+                community?</h3>
+              <p class="parrafo">Head over to our Welcome Thread greet some new
+                DEV
+                members!</p>
+            </div>
+          </div>
+          <p class="parrafo">DEV Community A space to discuss <br> and keep up
+            software development<br> and manage your
+            software career<br></p>
+          <p class="parrafo"> Built on Forem — the open source <br> software
+            that
+            powers DEV and other<br> inclusive
+            communities.</p>
+          <p class="parrafo">Made with love and Ruby on Rails.<br> DEV Community
+            ©
+            2016 - 2025</p>
+        </div> <!-- aqui se acaba la parte Izquierda -->
+      </div>
+      <div class="containersecciontwo">
+        <div id="partCenter">
+          <div class="arriba">
+            <button id="relevant" class="indice"> Relevant</button>
+            <button class="indice">Latest</button>
+            <button class="indice">Top</button>
+          </div>
+
+          <div class="dev-card">
+            <div class="card-header">
+              <span class="saludo">👋 DEV Challenges</span>
+
+              <div class="menu-container">
+                <input type="checkbox" id="menu-toggle2">
+                <label for="menu-toggle2" class="menu-button">⋯</label>
+                <div class="dropdown-menu">
+                  <a href="#">What's a billboard?</a>
+                  <a href="#">Manage preferences</a>
+                  <a href="#">Report billboard</a>
+                </div>
+              </div>
+            </div>
+
+            <img src="imagenes /muro.png" alt="Banner" class="banner">
+
+            <p class="description">
+              <strong>Outsource your dull tasks and compete for a share of
+                $10K!</strong> Ready to dive in?
+            </p>
+
+            <div class="link-preview">
+              <div class="logo">DEV</div>
+              <div class="text-content" >
+                <a href="./posts.html"><strong>Join the Runner H "AI Agent Prompting"
+                  Challenge:</strong><br></a>
+                $10,000 in Prizes for 20 Winners!!!<br>
+                <span class="meta">dev.to staff for The DEV Team · Jun
+                  5</span><br>
+                <span class="enlace">#devchallenge #runnerhchallenge #ai
+                  #machinelearning</span>
+              </div>
+            </div>
+
+            <p class="footer-text">Happy prompting!</p>
+          </div>
+          <!--.................................................comienza los cometarios-->
+          <div>
+            <img src="imagenes /share.png" alt="imagen" width="500px"
+              height="200px">
+          </div>
+          <div class="post-card">
+            <div class="author-section">
+              <img src="imagenes /gerard.png" alt="Avatar" class="avatar">
+              <div class="author-info">
+                <div class="author-name">Rohan Sharma <span
+                    class="badge">✚✚</span></div>
+                <div class="date">Jun 21</div>
+              </div>
+            </div>
+
+            <h2 class="article-title">Creating a Chatbot from Scratch and Vibe
+              Coding the UI 💃</h2>
+
+            <div class="tags">
+              <span>#webdev</span>
+              <span>#vibecoding</span>
+              <span>#javascript</span>
+              <span>#programming</span>
+            </div>
+
+            <div class="post-footer">
+              <div class="reactions">
+                <span class="icons">❤️ 🧠 😲 🙌 🔥</span>
+                <button class="reaction-button">57 reactions</button>
+              </div>
+
+              <div class="comments">
+                <button class="comment-button">💬 19 comments</button>
+              </div>
+
+              <div class="read-time">
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <!--................................................................................-->
+          <div class="post-card">
+            <div class="author-section">
+              <img src="imagenes /perfilRobert.png" alt="Avatar" class="avatar">
+              <div class="author-info">
+                <div class="author-name">Chirag Aggarwal<span
+                    class="badge">✚✚</span></div>
+                <div class="date">Jun 21</div>
+              </div>
+            </div>
+            <h2 class="article-title">From student to full-time Platform
+              Engineer
+              at
+              Appwrite</h2>
+
+            <div class="post-footer">
+              <div class="reactions">
+                <span class="icons">❤️ 🧠 😲 🙌 🔥</span>
+                <button class="reaction-button">57 reactions</button>
+              </div>
+
+              <div class="comments">
+                <button class="comment-button">💬 19 comments</button>
+              </div>
+
+              <div class="read-time">
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <!--...............................................................................-->
+          <div class="post-card">
+            <div class="author-section">
+              <img src="imagenes /perfiljaneway.jpeg" alt="Avatar"
+                class="avatar">
+              <div class="author-info">
+                <div class="author-name">Jane way<span
+                    class="badge">✚✚</span></div>
+                <div class="date">Jun 21</div>
+              </div>
+            </div>
+            <h2 class="article-title">Why choose DuckDuckGo as a search
+              engine?</h2>
+
+            <div class="tags">
+              <span>#discuss</span>
+              <span>#productivity</span>
+
+            </div>
+            <div class="post-footer">
+              <div class="reactions">
+                <span class="icons">❤️ 🧠 😲 🙌 🔥</span>
+                <button class="reaction-button">57 reactions</button>
+              </div>
+
+              <div class="comments">
+                <button class="comment-button">💬 19 comments</button>
+              </div>
+
+              <div class="read-time">
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <!--...........................................................................-->
+          <div class="post-card">
+            <div class="author-section">
+              <img src="imagenes /perfilRL.jpeg" alt="Avatar" class="avatar">
+              <div class="author-info">
+                <div class="author-name">Chirag Aggarwal<span
+                    class="badge">✚✚</span></div>
+                <div class="date">Jun 21</div>
+              </div>
+            </div>
+            <h2 class="article-title">From student to full-time Platform
+              Engineer
+              at
+              Appwrite</h2>
+            <div class="tags">
+              <span>#webdev</span>
+              <span>#vibecoding</span>
+              <span>#javascript</span>
+              <span>#programming</span>
+            </div>
+
+            <div class="post-footer">
+              <div class="reactions">
+                <span class="icons">❤️ 🧠 😲 🙌 🔥</span>
+                <button class="reaction-button">57 reactions</button>
+              </div>
+
+              <div class="comments">
+                <button class="comment-button">💬 19 comments</button>
+              </div>
+
+              <div class="read-time">
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <!--............................................................................-->
+          <div class="post-card">
+            <div class="author-section">
+              <img src="imagenes /perfilcomelona.webp" alt="Avatar"
+                class="avatar">
+              <div class="author-info">
+                <div class="author-name">nabbisen<span
+                    class="badge">✚✚</span></div>
+                <div class="date">Jun 21</div>
+              </div>
+            </div>
+            <h2 class="article-title">Web API とは何か</h2>
+            <div class="tags">
+              <span>#Vue</span>
+              <span>#typescript</span>
+              <span>#spa</span>
+              <span>#Webdev</span>
+            </div>
+
+            <div class="post-footer">
+              <div class="reactions">
+                <span class="icons">❤️ 🧠 😲 🙌 🔥</span>
+                <button class="reaction-button">57 reactions</button>
+              </div>
+
+              <div class="comments">
+                <button class="comment-button">💬 19 comments</button>
+              </div>
+
+              <div class="read-time">
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+          <!--...............................................................................-->
+          <div class="post-card">
+            <div class="author-section">
+              <img src="imagenes /perfilpicard.jpeg" alt="Avatar"
+                class="avatar">
+              <div class="author-info">
+                <div class="author-name">Shubham Tiwari<span
+                    class="badge">✚✚</span></div>
+                <div class="date">Jun 21</div>
+              </div>
+            </div>
+            <h2 class="article-title">Mastering API Handling: Fetch, CRUD, Auth,
+              and
+              AbortController</h2>
+            <div class="tags">
+              <span>#Javascript</span>
+              <span>#Webdev</span>
+              <span>#tutorial</span>
+              <span>#beginners</span>
+            </div>
+
+            <div class="post-footer">
+              <div class="reactions">
+                <span class="icons">❤️ 🧠 😲 🙌 🔥</span>
+                <button class="reaction-button">57 reactions</button>
+              </div>
+
+              <div class="comments">
+                <button class="comment-button">💬 19 comments</button>
+              </div>
+
+              <div class="read-time">
+                <span>4 min read</span>
+              </div>
+            </div>
+          </div>
+        </div> <!----aqui se acaba la parte dos -->
+      </div>
+      <div class="containerseccionthree">
+        <div id="partRight">
+          <div class="cuadrorig">
+            <p class="titulo">👋 What's happening this week</p>
+            <h2>Challenges 🤗</h2>
+
+            <!-- Tarjeta 1 -->
+            <div class="car">
+              <p class="car2">Deadline Extended ⏰</p>
+              <img src="imagenes /storybook.png" alt="Storyblok Challenge">
+              <a href="#">Storyblok Headless CMS Challenge</a>
+              <p class="prize">$3,000 in prizes!</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="car">
+              <p class="car2">Happening Now ✨</p>
+              <img src="imagenes /muro.png" alt="AI Prompt Challenge">
+              <a href="#">Runner H "AI Agent Prompting" Challenge</a>
+              <p class="prize">$10,000 in prizes for 20 winners!</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="car">
+              <p class="car2">Back Again 🎨</p>
+              <img src="imagenes /flores.png" alt="June Celebrations">
+              <a href="#">Frontend Challenge: June Celebrations</a>
+              <p class="prize">Check out our new prompt, Perfect pairings!</p>
+            </div>
+          </div>
+         
+          <div class="boxone">
+  <h2>#discuss</h2>
+  <p class="noticias">Discussion threads targeting the whole community</p>
+
+  <div class="distwo">
+    <p class="noticiaone">Meme Monday</p>
+    <p class="comments">53 comments</p>
+  </div>
+
+  <div class="disttwo">
+    <p class="noticiaone">6G Connectivity: The Future of Wireless Communication</p>
+    <span class="newone">New</span>
+  </div>
+
+  <div class="distwo">
+    <p class="noticiaone">Rust’s Approach to Memory and Performance</p>
+    <span class="newone">New</span>
+  </div>
+
+  <div class="distwo">
+    <p class="noticiaone">DevOps как по учебнику. Возможно ли? [RU]</p>
+    <span class="newone">New</span>
+  </div>
+</div>
+<!--ultima parte yeii-->
+          
+     <div class="lastpart">
+  <h3>trending guides/resources</h3>
+
+  <p>I vibe-coded a $20M YC app<br>in a weekend, here's how🧘‍♀️<br>🪄</p>
+
+  <p>Top 10 Best AI Coding<br>Agents for Vibe Coders 2025</p>
+
+  <p>10 Must-Read AI and LLM<br>Engineering Books for<br>Developers in 2025</p>
+
+  <p>10 Free Public APIs I’m<br>Actually Using as a<br>Developer in 2025</p>
+
+  <p>I tried 100+ MCP Servers and<br>Here's my Top 10</p>
+</div>
+
+    
+         
+         
+         
+          </div><!--dis-->
+        </div> <!-- aqui se acaba la parte Derecha -->
+      </div>
+
+    <!--..................................................................................final de la parte dos (lado izquierdo)-->
+    <!--...................................................................................aqui inicia la parte tres (centro)-->
+    </main> <!-- aqui se acaba el div central -->
+</html>

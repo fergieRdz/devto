@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Styles-->
+    <link rel="stylesheet" href="./postStyles.css" />
+        <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://media2.dev.to/dynamic/image/width=32,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png"
+    />
+    <title>Dev Community | Post</title>
+  </head>
+
+  <body>
+        <nav class="navWeb">
+      <div class="containerNavWeb">
+        <div class="containerSerch">
+          <a href="/tf.html"  target="_blank">        
+          <div> 
+              <img
+              class="imgLogo"
+              src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt="Logo"
+            />
+          </div>
+          </a>
+          <form class="flex">
+            <div class="search">
+              <span class="search-icon material-symbols-outlined">
+                search
+              </span>
+              <input
+                class="search-input"
+                type="search"
+                placeholder="Search..."
+              />
+              <div class="search-Text">
+                <p>Powered by @ Algolia</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="containerBtnNav">
+          <button class="btnNavL" id="botonnavL">Log in</button>
+          <button class="btnNavC" id="botonnavC">Create acount</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div id="aside">
+        <div class="icons">
+          <!-- type heart -->
+          <button id="corazon" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              role="img"
+              aria-hidden="true"
+              class="crayons-icon"
+            >
+              <g clip-path="url(#clip0_988_3276)">
+                <path
+                  d="M19 14V17H22V19H18.999L19 22H17L16.999 19H14V17H17V14H19ZM20.243 4.75698C22.505 7.02498 22.583 10.637 20.479 12.992L19.059 11.574C20.39 10.05 20.32 7.65998 18.827 6.16998C17.324 4.67098 14.907 4.60698 13.337 6.01698L12.002 7.21498L10.666 6.01798C9.09103 4.60598 6.67503 4.66798 5.17203 6.17198C3.68203 7.66198 3.60703 10.047 4.98003 11.623L13.412 20.069L12 21.485L3.52003 12.993C1.41603 10.637 1.49503 7.01898 3.75603 4.75698C6.02103 2.49298 9.64403 2.41698 12 4.52898C14.349 2.41998 17.979 2.48998 20.242 4.75698H20.243Z"
+                  fill="#525252"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_988_3276">
+                  <rect width="24" height="24" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <span id="count-corazon">0</span>
+        </div>
+        <div class="icons">
+          <!-- type comments-->
+          <button id="comments" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-hidden="true"
+              class="crayons-icon"
+            >
+              <path
+                d="M10 3h4a8 8 0 010 16v3.5c-5-2-12-5-12-11.5a8 8 0 018-8zm2 14h2a6 6 0 000-12h-4a6 6 0 00-6 6c0 3.61 2.462 5.966 8 8.48V17z"
+              ></path>
+            </svg>
+          </button>
+          <span id="count-comments">0</span>
+        </div>
+        <div class="icons">
+          <!-- type favorite-->
+          <button id="favoritos" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-hidden="true"
+              class="crayons-icon"
+            >
+              <path
+                d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"
+              ></path>
+            </svg>
+          </button>
+
+          <span id="count-favoritos">0</span>
+        </div>
+        <div class="icons">
+          <!-- type share -->
+          <button id="compartir" class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              role="img"
+              aria-hidden="true"
+              class="crayons-icon"
+              width="24"
+              height="24"
+            >
+              <path
+                transform="translate(24,0) scale(-1,1)"
+                d="M6 4H21C21.5523 4 22 4.44772 22 5V12H20V6H6V9L1 5L6 1V4ZM18 20H3C2.44772 20 2 19.5523 2 19V12H4V18H18V15L23 19L18 23V20Z"
+              ></path>
+            </svg>
+          </button>
+          <span id="count-share">0</span>
+        </div>
+<div class="dropdown-wrapper">
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="menu-btn">⋯</label>
+  <div class="menu-card">
+    <button type="button">Copy Link</button>
+    <button type="button">Share to X</button>
+    <button type="button">Share to LinkedIn</button>
+    <button type="button">Share to Facebook</button>
+    <button type="button">Share to Mastodon</button>
+    <button type="button">Share post via…</button>
+    <button type="button" class="danger">Report Abuse</button>
+  </div>
+</div>
+      </div>
+      <div id="postCenter">
+        <img src="" alt="" />
+        <div id="creatorPost">
+          <img
+            id="coverIMG"
+            src="./https___dev-to-uploads.s3.amazonaws.com_uploads_articles_g691oplv5qw5gijyxfr5.jpeg"
+            alt="cover img"
+          />
+          <div id="creator"></div>
+          <div id="emojis"></div>
+          <div id="postTitle">
+            <div id="title"></div>
+            <div class="hashtags"></div>
+          </div>
+          <div class="mainPost">
+            <h2>
+              Join the Runner H "AI Agent Prompting" Challenge: $10,000 in
+              Prizes for 20 Winners!!!
+            </h2>
+            <p>
+              Runner H is the AI agent you can delegate all your boring and
+              repetitive tasks to - an autonomous agent that can use any tools
+              you give it and complete full tasks from a single prompt, such as:
+              Reading your important emails, drafting (and even sending!)
+              replies. Finding job opportunities and applying for you. Creating
+              a Google Sheet with trending ad ideas and sending it to your team
+              on Slack. And much much more...all while you're enjoying your
+              morning coffee. ☕
+            </p>
+            <h2>Challenge Details</h2>
+            <p>
+              Running through July 6, the Runner H "AI Agent Prompting"
+              Challenge is all about building with Runner H. This challenge is
+              designed to be our most accessible yet, requiring no coding
+              skills, just your creativity and ability to prompt AI agents!
+              We'll be selecting 20 winners from our $10,000 prize pool for this
+              challenge, so definitely give it a try!
+            </p>
+            <h2>What do you need to do?</h2>
+            <h3>
+              Use Runner H to complete a creative, innovative, or time-consuming
+              task.
+            </h3>
+            <p>
+              Show us how AI agents can transform the way we work, whether it's
+              streamlining daily tasks, solving complex business problems, or
+              creating entirely new possibilities we haven't imagined yet. Your
+              submission should demonstrate the power and versatility of Runner
+              H while providing clear documentation that helps others understand
+              and potentially replicate your work. Whether you're a seasoned
+              developer or completely new to AI agents, this is your chance to
+              explore the cutting edge of autonomous workflows and showcase
+              what's possible when AI handles the heavy lifting! We'll be
+              selecting 10 winners from this overall prompt, plus 10 additional
+              winners from our Community Champion category.
+            </p>
+            <h4>Additional Prize Category</h4>
+            <p>
+              We want to get the word out about Runner H so we have one
+              additional prize category dedicated to spreading community
+              awareness! Community Champion: Awarded to ten submissions most
+              loved by the developer community at large. Those participating in
+              this category should: Share your use case online and embed your
+              social posts directly in the body of your submission or in the
+              comments section. Follow @hcompany_ai and share your use case in
+              this thread:
+            </p>
+          </div>
+        </div>
+        <div id="post">
+          <h1>Top Comments</h1>
+          <div id="commentPart">
+            <img src="./profile.jpg" alt="profilepic" class="profileIMG" />
+            <input
+              type="add to the discussion"
+              id="comment"
+              placeholder="add to the discussion..."
+            />
+          </div>
+        </div>
+        <div id="comments-container"></div>
+      </div>
+      <div id="creatorInfoRight">
+        <div id="black"></div>
+        <div id="creatorCard">
+          <div id="creatorTitle">
+            <img id="devimgtitle" src="./profile.jpg" alt="img">
+            <h2>The DEV Team</h2>
+          </div>
+          <button id="follow" class="bigButton"> Follow </button>
+          <p>The hardworking team behind DEV ❤️</p>
+          <p>Want to contribute to open source and help make the DEV community stronger?
+            The code that powers DEV is called Forem and is freely available on GitHub.
+            You're welcome to jump in!</p>
+            <button id="contribute" class="bigButton">Contribute to Forem</button>
+      </div>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="/indexPost.js" type="text/javascript"></script>
+  </body>
+</html>
