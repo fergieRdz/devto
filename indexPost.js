@@ -21,7 +21,8 @@ sumarLikes(favoritos, contador3)
 sumarLikes(compartir, contador4)
 
  const input = document.getElementById('comment');
-  const container = document.getElementById('comments-container');
+const container = document.getElementById('comments-container');
+let date = new Date();
 
   input.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') {
@@ -35,7 +36,11 @@ sumarLikes(compartir, contador4)
         <div class="comment">
           <img src="./profile.jpg" alt="profilepic" class="profileIMG" width="40">
           <div class="comment-content">
-            <p>${text}</p>
+            <div class="flex">
+              <h4 id="postUser">Fergie </h4>
+              <p id="date">${date}</p>
+            </div>
+            <p id="postCommentss">${text}</p>
             <div class="comment-footer">
               <button class="icon-btn" onclick="increment(this)">❤️ <span>0</span></button>
               <button class="icon-btn" onclick="increment(this)">💬 <span>0</span></button>
